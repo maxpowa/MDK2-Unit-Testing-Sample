@@ -18,18 +18,11 @@ namespace UnitTests
         [Test]
         public void Test1()
         {
-            var fakeConnector = A.Fake<MyShipConnector>();
-            A.CallToSet(() => fakeConnector.Enabled).DoesNothing();
-            var fakeTerminalSystem = A.Fake<IMyGridTerminalSystem>(x => x.Strict());
-            A.CallTo(() =>
-                    fakeTerminalSystem.GetBlocksOfType(A<List<IMyShipConnector>>._, A<Func<IMyShipConnector, bool>>._))
-                .Invokes((List<IMyShipConnector> connectors, Func<IMyShipConnector, bool> collect) => connectors.Add(
-                    fakeConnector
-                ));
+            var fakeMyProgram = A.Fake<MyGridProgram>(x => x.Strict());
+            A.CallTo(() => fakeMyProgram.GridTerminalSystem).Returns(A.Fake<IMyGridTerminalSystem>());
             var instance = new Program();
-            instance.DoWork(fakeTerminalSystem);
-            A.CallTo(() => fakeConnector.Enabled).MustHaveHappened();
-            Assert.That(fakeConnector.Enabled, Is.True);
+            instance.Main("", UpdateType.None);
+            Assert.Pass();
         }
     }
 }

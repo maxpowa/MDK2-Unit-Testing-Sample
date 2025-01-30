@@ -68,14 +68,9 @@ namespace IngameScript
             // The method itself is required, but the arguments above
             // can be removed if not needed.
             
-            DoWork(GridTerminalSystem);
-        }
-
-        public void DoWork(IMyGridTerminalSystem gridTerminalSystem)
-        {
             // Get all connectors on this ship
             List<IMyShipConnector> connectors = new List<IMyShipConnector>();
-            gridTerminalSystem.GetBlocksOfType(connectors, block => block.IsSameConstructAs(Me));
+            GridTerminalSystem.GetBlocksOfType(connectors, block => block.IsSameConstructAs(Me));
 
             // Turn them all on
             foreach (var connector in connectors)
