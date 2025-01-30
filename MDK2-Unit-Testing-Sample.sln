@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Script", "Script\Script.csproj", "{C6913CB7-D492-43DE-82E8-AF5A29A4811F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{778A1C32-5184-49B9-84AB-C5B00D70C5B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6913CB7-D492-43DE-82E8-AF5A29A4811F}.Debug|x64.ActiveCfg = Debug|x64
+		{C6913CB7-D492-43DE-82E8-AF5A29A4811F}.Debug|x64.Build.0 = Debug|x64
+		{C6913CB7-D492-43DE-82E8-AF5A29A4811F}.Release|x64.ActiveCfg = Release|x64
+		{C6913CB7-D492-43DE-82E8-AF5A29A4811F}.Release|x64.Build.0 = Release|x64
+		{778A1C32-5184-49B9-84AB-C5B00D70C5B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{778A1C32-5184-49B9-84AB-C5B00D70C5B5}.Debug|x64.Build.0 = Debug|Any CPU
+		{778A1C32-5184-49B9-84AB-C5B00D70C5B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{778A1C32-5184-49B9-84AB-C5B00D70C5B5}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

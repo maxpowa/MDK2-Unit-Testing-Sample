@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netframework48</TargetFramework>
+        <LangVersion>6</LangVersion>
+        <Platforms>x64</Platforms>
+        <IsTestProject>true</IsTestProject>
+        <SpaceEngineersBinCopyLocal>true</SpaceEngineersBinCopyLocal>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+        <PackageReference Include="NUnit" Version="3.14.0" />
+        <PackageReference Include="NUnit.Analyzers" Version="3.9.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+        <PackageReference Include="FakeItEasy" Version="8.3.0" />
+        
+        <PackageReference Include="Mal.Mdk2.References" Version="2.2.4"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Script\Script.csproj" />
+    </ItemGroup>
+
+</Project>
